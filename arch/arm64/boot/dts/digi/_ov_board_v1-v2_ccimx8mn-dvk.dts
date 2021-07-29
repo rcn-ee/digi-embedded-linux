@@ -78,6 +78,14 @@
 				 */
 				 //status = "disabled";
 			};
+
+			co2-sensor@61 {
+				compatible = "sensirion,scd30";
+				reg = <0x61>;
+				vdd-supply = <&reg_3v3_ext>;
+				//interrupt-parent = <&gpio0>;
+				//interrupts = <0 IRQ_TYPE_LEVEL_HIGH>;
+			};
 		};
 	};
 
